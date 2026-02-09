@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="card">
                     <h2 className="h2">FAQ rapida</h2>
                     <ul className="list">
-                        <li><span className="k">Perché esiste questa pagina?</span> Per annunciare il matrimonio e il ricevimento di nozze di Renato Della Polla e Raffaele Graviero, per rendere fruibili informazioni su di esso per gli invitati al ricevimento</li>
+                        <li><span className="k">Perché esiste questa pagina?</span> Per annunciare il matrimonio e il ricevimento di nozze di Renato Della Polla e Raffaele Graviero e per rendere fruibili informazioni su di esso per gli invitati al ricevimento</li>
                         <li><span className="k">Riguarda un evento privato?</span> Sì. Tutto il sito riguarda la festa di nozze di Renato e Raffaele.</li>
                         <li><span className="k">L'evento è a scopo di lucro?</span> No, l'evento e l'utilizzo di whatsapp non verranno dedicati a scopi di lucro, nè a potenziale raccolta fondi, ma servirà solo per dare informazioni di tipo logistico, organizzativo e riguardo le varie modalità in cui gli invitati potranno richiedere i link e i dati bancari per la lista di nozze.</li>
                         <li><span className="k">Perchè il sito utilizza Whatsapp Business API?</span> Per inviare informazioni agli invitati sotto loro esplicita richiesta e autorizzazione consapevole.</li>
