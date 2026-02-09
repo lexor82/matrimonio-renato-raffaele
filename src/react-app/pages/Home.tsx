@@ -6,10 +6,10 @@ export default function Home() {
             <section className="hero card">
                 <div className="hero-left">
                     <div className="pill">Renato & Raffaele annunciano il lieto evento</div>
-                    <h1 className="h1">Benvenuto sul sito del nostro matrimonio!</h1>
+                    <h1 className="h1">Benvenuti sul sito del nostro matrimonio!</h1>
                     <p className="p">
                         È proprio vero, ci sposiamo il
-                        <b>31 Luglio 2026! ❤</b>
+                        <b> 31 Luglio 2026! ❤</b>
                     </p>
                 </div>
 
