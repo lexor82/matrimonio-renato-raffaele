@@ -1,66 +1,65 @@
-// src/App.tsx
+import { Navigate, Route, Routes, Link, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import cloudflareLogo from "./assets/Cloudflare_Logo.svg";
-import honoLogo from "./assets/hono.svg";
-import "./App.css";
-
-function App() {
-	const [count, setCount] = useState(0);
-	const [name, setName] = useState("unknown");
+function TopNav() {
+	const loc = useLocation();
+	const isActive = (path: string) => loc.pathname === path;
 
 	return (
-		<>
-			<div>
-				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-				<a href="https://hono.dev/" target="_blank">
-					<img src={honoLogo} className="logo cloudflare" alt="Hono logo" />
-				</a>
-				<a href="https://workers.cloudflare.com/" target="_blank">
-					<img
-						src={cloudflareLogo}
-						className="logo cloudflare"
-						alt="Cloudflare logo"
-					/>
-				</a>
+		<header className="nav">
+			<div className="nav-inner">
+				<div className="brand">
+					<div className="brand-dot" aria-hidden />
+					<div>
+						<div className="brand-title">Renato &amp; Raffaele</div>
+						<div className="brand-sub">Pagina informativa (verifica WhatsApp Business)</div>
+					</div>
+				</div>
+
+				<nav className="nav-links" aria-label="Navigazione">
+					<Link className={`nav-link ${isActive("/") ? "active" : ""}`} to="/">
+						Home
+					</Link>
+					<Link className={`nav-link ${isActive("/privacy") ? "active" : ""}`} to="/privacy">
+						Privacy
+					</Link>
+					<Link className={`nav-link ${isActive("/terms") ? "active" : ""}`} to="/terms">
+						Note legali
+					</Link>
+				</nav>
 			</div>
-			<h1>Vite + React + Hono + Cloudflare</h1>
-			<div className="card">
-				<button
-					onClick={() => setCount((count) => count + 1)}
-					aria-label="increment"
-				>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-			<div className="card">
-				<button
-					onClick={() => {
-						fetch("/api/")
-							.then((res) => res.json() as Promise<{ name: string }>)
-							.then((data) => setName(data.name));
-					}}
-					aria-label="get name"
-				>
-					Name from API is: {name}
-				</button>
-				<p>
-					Edit <code>worker/index.ts</code> to change the name
-				</p>
-			</div>
-			<p className="read-the-docs">Click on the logos to learn more</p>
-		</>
+		</header>
 	);
 }
 
-export default App;
+export default function App() {
+	return (
+		<div className="app">
+			<TopNav />
+
+			<main className="main">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/privacy" element={<Privacy />} />
+					<Route path="/terms" element={<Terms />} />
+
+					{/* fallback */}
+					<Route path="/privacy.html" element={<Navigate to="/privacy" replace />} />
+					<Route path="/terms.html" element={<Navigate to="/terms" replace />} />
+					<Route path="*" element={<Navigate to="/" replace />} />
+				</Routes>
+			</main>
+
+			<footer className="footer">
+				<div className="footer-inner">
+					<div>© {new Date().getFullYear()} Renato &amp; Raffaele</div>
+					<div className="footer-note">
+						Pagina pubblica minimal per consentire la verifica automatica dei sistemi Meta/WhatsApp.
+					</div>
+				</div>
+			</footer>
+		</div>
+	);
+}
