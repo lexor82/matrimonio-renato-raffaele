@@ -13,8 +13,8 @@ function TopNav() {
 				<div className="brand">
 					<div className="brand-dot" aria-hidden />
 					<div>
-						<div className="brand-title">Renato &amp; Raffaele</div>
-						<div className="brand-sub">Pagina informativa (verifica WhatsApp Business)</div>
+						<div className="brand-title">Il Matrimonio di Renato &amp; Raffaele</div>
+						<div className="brand-sub">Benvenuti sul sito del nostro matrimonio</div>
 					</div>
 				</div>
 
@@ -54,9 +54,9 @@ export default function App() {
 
 			<footer className="footer">
 				<div className="footer-inner">
-					<div>© {new Date().getFullYear()} Renato &amp; Raffaele</div>
+					<div>© {new Date().getFullYear()} Renato &amp; Raffaele - All rights reserved</div>
 					<div className="footer-note">
-						Pagina pubblica minimal per consentire la verifica automatica dei sistemi Meta/WhatsApp.
+						Matrimonio di Renato & Raffaele 31 Luglio 2026
 					</div>
 				</div>
 			</footer>
