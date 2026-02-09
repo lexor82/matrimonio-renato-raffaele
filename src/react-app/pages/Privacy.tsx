@@ -20,9 +20,9 @@ export default function Privacy() {
                     I dati sono conservati per il tempo strettamente necessario alla gestione delle comunicazioni relative all’evento.
                 </p>
 
-                <h2 className="h2">Titolare e contatti</h2>
+                <h2 className="h2">Titolari e contatti</h2>
                 <p className="p">
-                    Renato &amp; Raffaele — contatto: <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a>
+                    Renato Della Polla &amp; Raffaele Graviero — contatto: <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a>
                 </p>
 
                 <h2 className="h2">Terze parti</h2>
@@ -32,7 +32,7 @@ export default function Privacy() {
 
                 <h2 className="h2">Nota Importante</h2>
                 <p className="p">
-                   Questo sito non viene utilizzato in alcun modo a scopi di lucro, nè raccolta fondi, nè vendita o commercio alcuno. Ma semplicemente per fornire informazioni agli invitati riguardo la loro possibilità di effettuare un libero regalo agli sposi.
+                   Questo sito non viene utilizzato in nessun modo per scopi di lucro, nè raccolta fondi, nè vendita o commercio alcuno. Ma semplicemente per fornire informazioni agli invitati riguardo la loro possibilità di effettuare un libero regalo agli sposi.
                 </p>
             </section>
         </div>
