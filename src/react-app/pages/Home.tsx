@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 export default function Home() {
     return (
@@ -17,6 +17,7 @@ export default function Home() {
                     <div className="info-box">
                         <div className="info-title">Contatti</div>
                         <ul className="list">
+                            <li><span className="k">Titolari:</span>Renato Della Polla e Raffaele Graviero</li>
                             <li><span className="k">Sito Web:</span>https://matrimoniorenatoeraffaele.it</li>
                             <li><span className="k">Email:</span> <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a></li>
                             <li><span className="k">Paese:</span> Italia</li>
