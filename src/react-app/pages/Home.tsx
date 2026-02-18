@@ -18,8 +18,8 @@ export default function Home() {
                         <div className="info-title">Contatti</div>
                         <ul className="list">
                             <li><span className="k">Nomi:</span>Renato Della Polla e Raffaele Graviero</li>
-                            <li><span className="k">Web:</span> <a href="mailto:info@renatoeraffaele.it">https://matrimoniorenatoeraffaele.it</a></li>
-                            <li><span className="k">Email:</span> <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a></li>
+                            <li><span className="k">Web:</span> <a href="mailto:info@matrimoniorenatoeraffaele.it">https://matrimoniorenatoeraffaele.it</a></li>
+                            <li><span className="k">Email:</span> <a href="mailto:info@matrimoniorenatoeraffaele.it">info@matrimoniorenatoeraffaele.it</a></li>
                             <li><span className="k">Paese:</span> Italia</li>
                             <li><span className="k">WhatsApp:</span> usato solo per comunicazioni relative all’evento</li>
                         </ul>

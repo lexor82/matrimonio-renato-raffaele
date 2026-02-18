@@ -13,7 +13,7 @@ export default function Terms() {
                 <h2 className="h2">Titolare del trattamento</h2>
                 <p className="p">
                     Renato & Raffaele<br />
-                    Email: <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a>
+                    Email: <a href="mailto:info@matrimoniorenatoeraffaele.it">info@matrimoniorenatoeraffaele.it</a>
                 </p>
 
                 <h2 className="h2">Tipologia di dati trattati</h2>

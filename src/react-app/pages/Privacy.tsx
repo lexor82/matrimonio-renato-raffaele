@@ -22,12 +22,12 @@ export default function Privacy() {
 
                 <h2 className="h2">Titolari e contatti</h2>
                 <p className="p">
-                    Renato Della Polla &amp; Raffaele Graviero — contatto: <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a>
+                    Renato Della Polla &amp; Raffaele Graviero — contatto: <a href="mailto:info@matrimoniorenatoeraffaele.it">info@matrimoniorenatoeraffaele.it</a>
                 </p>
 
                 <h2 className="h2">Terze parti</h2>
                 <p className="p">
-                    Le comunicazioni avvengono tramite servizio mail  <a href="mailto:info@renatoeraffaele.it">info@renatoeraffaele.it</a> e tramite la piattaforma WhatsApp Business fornita da Meta Platforms, Inc.
+                    Le comunicazioni avvengono tramite servizio mail  <a href="mailto:info@matrimoniorenatoeraffaele.it">info@matrimoniorenatoeraffaele.it</a> e tramite la piattaforma WhatsApp Business fornita da Meta Platforms, Inc.
                 </p>
 
                 <h2 className="h2">Nota Importante</h2>
